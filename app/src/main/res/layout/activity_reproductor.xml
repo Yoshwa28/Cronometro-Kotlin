@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/fondouno"
+    tools:context=".reproductor">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="Titulo"
+        android:gravity="center|top"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/portada"
+        android:layout_width="250dp"
+        android:layout_height="250dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tiempo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+        <SeekBar
+            android:id="@+id/transcurso"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/duracion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:id="@+id/btnRetroceder"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+            android:src="@drawable/retroceder"/>
+        <ImageView
+            android:id="@+id/btnPlay"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/play"/>
+        <ImageView
+            android:id="@+id/btnPausa"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/pausa"
+            android:visibility="gone"/>
+        <ImageView
+            android:id="@+id/btnAdelantar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/adelantar"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/autor"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Autor: "
+            android:gravity="left|top"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/album"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Album: "
+            android:gravity="left|top"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/anio"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Año: "
+            android:gravity="left|top"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

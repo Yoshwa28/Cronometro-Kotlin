@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/fonddos"
+    android:backgroundTint="#00020202"
+    android:backgroundTintMode="add"
+    tools:context=".pre_main">
+
+    <com.airbnb.lottie.LottieAnimationView
+        app:lottie_colorFilter="@color/teal_200"
+        android:layout_width="275dp"
+        android:layout_height="268dp"
+        android:scaleType="fitXY"
+        android:layout_weight="0.1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.084"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/music4" />
+
+    <Button
+        android:id="@+id/pre_button"
+        android:layout_width="195dp"
+        android:layout_height="80dp"
+        android:text="Reproductor de Audio"
+        android:textSize="20dp"
+        app:cornerRadius="30dp"
+        android:layout_weight="0"
+        android:textColor="@color/white"
+        android:backgroundTint="#23000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <Button
+        android:id="@+id/pre_crono"
+        android:layout_width="195dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#23000000"
+        android:text="Cronometro"
+        android:layout_weight="0"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.637" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"/>
+
+</LinearLayout>

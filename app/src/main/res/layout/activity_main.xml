@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#000000"
+        android:padding="16dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/la_centerAnimation"
+            android:layout_gravity="center"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="true"
+            android:layout_weight="1"
+            app:lottie_rawRes="@raw/cronometro"
+            />
+
+        <TextView
+            android:id="@+id/verTiempo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_weight="01"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textSize="56sp" />
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:onClick="onClickStart"
+            android:text="@string/Iniciar"
+            app:strokeColor="#5C0C0C" />
+
+        <Button
+            android:id="@+id/stop_button"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:onClick="onClickStop"
+            android:text="@string/Detener" />
+
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:onClick="onClickReset"
+            android:text="@string/Reiniciar" />
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
